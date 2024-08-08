@@ -11,6 +11,10 @@
 		455AFEE32C647FA100800522 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455AFEE22C647FA100800522 /* ContentView.swift */; };
 		455AFEE52C647FA400800522 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 455AFEE42C647FA400800522 /* Assets.xcassets */; };
 		455AFEE82C647FA400800522 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 455AFEE72C647FA400800522 /* Preview Assets.xcassets */; };
+		455AFEF42C6481ED00800522 /* PokemonAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455AFEF32C6481ED00800522 /* PokemonAPI.swift */; };
+		455AFEF62C64828800800522 /* PokemonListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455AFEF52C64828800800522 /* PokemonListView.swift */; };
+		455AFEF82C64B23B00800522 /* PokemonDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455AFEF72C64B23B00800522 /* PokemonDetailView.swift */; };
+		455AFEFA2C65180E00800522 /* MyPokemonListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455AFEF92C65180E00800522 /* MyPokemonListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +24,10 @@
 		455AFEE42C647FA400800522 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		455AFEE72C647FA400800522 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		455AFEE92C647FA400800522 /* PhinconProject.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PhinconProject.entitlements; sourceTree = "<group>"; };
+		455AFEF32C6481ED00800522 /* PokemonAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonAPI.swift; sourceTree = "<group>"; };
+		455AFEF52C64828800800522 /* PokemonListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonListView.swift; sourceTree = "<group>"; };
+		455AFEF72C64B23B00800522 /* PokemonDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonDetailView.swift; sourceTree = "<group>"; };
+		455AFEF92C65180E00800522 /* MyPokemonListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPokemonListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +44,10 @@
 		455AFED42C647FA100800522 = {
 			isa = PBXGroup;
 			children = (
+				455AFEF92C65180E00800522 /* MyPokemonListView.swift */,
+				455AFEF72C64B23B00800522 /* PokemonDetailView.swift */,
+				455AFEF52C64828800800522 /* PokemonListView.swift */,
+				455AFEF32C6481ED00800522 /* PokemonAPI.swift */,
 				455AFEDF2C647FA100800522 /* PhinconProject */,
 				455AFEDE2C647FA100800522 /* Products */,
 			);
@@ -139,7 +151,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				455AFEF62C64828800800522 /* PokemonListView.swift in Sources */,
+				455AFEF82C64B23B00800522 /* PokemonDetailView.swift in Sources */,
 				455AFEE32C647FA100800522 /* ContentView.swift in Sources */,
+				455AFEF42C6481ED00800522 /* PokemonAPI.swift in Sources */,
+				455AFEFA2C65180E00800522 /* MyPokemonListView.swift in Sources */,
 				455AFEE12C647FA100800522 /* PhinconProjectApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -280,6 +296,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -287,8 +304,11 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = bit.evolution.PhinconProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -307,6 +327,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -314,8 +335,11 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = bit.evolution.PhinconProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
